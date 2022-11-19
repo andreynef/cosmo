@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "cosmo-n"
+  },
+  "targets": {
+    "cosmo-n": {
+      "hosting": {
+        "cosmo-n": [
+          "andreynef"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

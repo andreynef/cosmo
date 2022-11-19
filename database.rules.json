@@ -1,0 +1,24 @@
+{
+  "rules": {
+    "users": {
+      ".read": "auth.uid == 'P2xTySL3BpeYw2BwjSCIqZJXOtL2'",
+      ".write": "auth.uid == 'P2xTySL3BpeYw2BwjSCIqZJXOtL2'",
+      "$uid": {
+        ".read": "auth.uid == $uid || auth.uid == 'P2xTySL3BpeYw2BwjSCIqZJXOtL2'",
+        ".write": "auth.uid == $uid || auth.uid == 'P2xTySL3BpeYw2BwjSCIqZJXOtL2'"
+      }
+    },
+    "usersShort": {
+      ".read": "auth.uid == 'P2xTySL3BpeYw2BwjSCIqZJXOtL2'",
+      ".write": "auth.uid == 'P2xTySL3BpeYw2BwjSCIqZJXOtL2'",
+      "$uid": {
+        ".read": "auth.uid == 'P2xTySL3BpeYw2BwjSCIqZJXOtL2'",
+        ".write": "auth.uid == $uid || auth.uid == 'P2xTySL3BpeYw2BwjSCIqZJXOtL2'"
+      }
+    },
+    "public": {
+      ".read": true,
+      ".write": "auth.uid == 'P2xTySL3BpeYw2BwjSCIqZJXOtL2'"
+    }
+  }
+}
